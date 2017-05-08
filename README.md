@@ -1,30 +1,19 @@
-# cnode
+﻿# cnode 社区
 
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
+## 本地运行项目
+```cli
 npm install
-
-# serve with hot reload at localhost:8080
 npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+```
+## 构建
+```cli
+npm run dist
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## graph
+缓存内容组件
+![](https://olyy111.github.io/cnode/project-graph/route-data-store.png)
+缓存store的数据流
+![](https://olyy111.github.io/cnode/project-graph/store.png)
+权限管理
+![](https://olyy111.github.io/cnode/project-graph/authorization.png)
