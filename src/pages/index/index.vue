@@ -81,7 +81,7 @@ import pullList from '../../mixins/pullList.js'
     
   }
 </script>
-<style lang="stylus">
+<style lang="stylus" scoped>
   .nav {
     position: absolute;
     top: 0;

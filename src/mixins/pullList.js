@@ -42,17 +42,20 @@ export default {
   methods: {
     pullList () {
       this.isLoading = true
-      Object.assign(this.$data, this.$options.routeData())
-      console.log(this.$options.routeData())
-      console.log(this.list)
       let {url, data} = this.setReq()
       util.get(url, data, ({data}) => {
         this.$nextTick(() => {
           this.isLoading = false
+          console.log(444)
         })
         if (this.isDropList) {
           this.isDropList = false
-          data.forEach( (value) => this.list.push(value))
+          let v1 = this.list
+          Object.keys(v1)
+          data.forEach( (value) => {
+            this.list.push(value)
+          })
+          let v2 = this.list
           // this.list = this.list.concat(data)
         }else {
           this.list = data

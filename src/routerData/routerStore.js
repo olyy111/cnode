@@ -16,7 +16,6 @@ export class RouterStore {
     let url = this._getQueryString (route)
     let data = Object.assign({}, routeData)
     this.data[url] = data
-    console.log(this.data)
   }
   getItem (route) {
     let url = this._getQueryString(route)

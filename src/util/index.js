@@ -22,7 +22,6 @@ ajax.beforeEach((req, next) => {
 
 export default {
   get (url, data = {}, success = () => { }, error = () => { }) {
-    console.log('发送请求了')
     ajax({ url, data, success, error, type: 'GET' })
   },
   post (url, data = {}, success = () => { }, error = () => { }) {
